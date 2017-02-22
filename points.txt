@@ -1,0 +1,48 @@
+mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true
+
+commands:
+------------------------
+to deploy: mvn clean install -P full
+
+(mvn clean install: just for building the project and -P full to deploy ur project on AEM runing server.)
+
+To convert ur maven project so that it can import into eclipse:
+
+mvn eclipse:eclipse -DdownloadSources=true -DdownloadJavadocs=true
+
+-> mvn clean test
+
+
+-----------------
+FileVault commands
+To know whether vault is up and working fine: "vlt --help"
+
+To checks out nodes from your repository on your file system: (sorce whatever posses filter.xml)
+vlt --credentials admin:admin co http://localhost:4502/crx/ . --force
+
+
+
+----------------------------
+
+http://dev.day.com/docs/en/cq/current/developing/sling_cheatsheet.html
+
+Meeting video link:
+--------------------
+Day1:
+https://my.adobeconnect.com/p8hkwez40sl/
+Day2: 
+https://my.adobeconnect.com/p39pls9fl3m/ 
+
+email:
+=--------
+vmitra@adobe.com
+
+Dropbox for AEM jar file:
+-----------------------
+https://www.dropbox.com/s/ufqgxnan6xablac/aem-author-p4502.jar
+
+
+
+http://www.day.com/maven/jsr170/javadocs/jcr-1.0/javax/jcr/observation/ObservationManager.html
+
+vmitra@adobe.com
